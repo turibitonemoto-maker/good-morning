@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.15);
+  }
+}
+
+.animate-twinkle-1 {
+  animation: 3s ease-in-out infinite twinkle;
+}
+
+.animate-twinkle-2 {
+  animation: 4.2s ease-in-out 1.4s infinite twinkle;
+}
+
+.animate-twinkle-3 {
+  animation: 3.6s ease-in-out 2.2s infinite twinkle;
+}
+
+@keyframes rainfall {
+  0% {
+    transform: translateY(-80px) translateX(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.75;
+  }
+  85% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(105vh) translateX(20px);
+    opacity: 0.1;
+  }
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(-20px) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.85;
+  }
+  50% {
+    transform: translateY(50vh) translateX(30px) rotate(180deg);
+    opacity: 0.95;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(105vh) translateX(-20px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes cloudDriftSlow {
+  0% {
+    transform: translateX(-15%);
+  }
+  50% {
+    transform: translateX(15%);
+  }
+  100% {
+    transform: translateX(-15%);
+  }
+}
+
+@keyframes cloudDriftFast {
+  0% {
+    transform: translateX(10%);
+  }
+  50% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(10%);
+  }
+}
+
+@keyframes sunbeamPulse {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(1.08) rotate(4deg);
+  }
+}
+
+@keyframes lightningFlash {
+  0%, 91%, 95%, 100% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0.85;
+  }
+  93% {
+    opacity: 0.15;
+  }
+  94% {
+    opacity: 0.75;
+  }
+}
+
+.animate-lightning {
+  animation: lightningFlash 7s infinite;
+}
+
+.animate-sunbeam {
+  animation: sunbeamPulse 8s ease-in-out infinite;
+}
+
+.animate-cloud-slow {
+  animation: cloudDriftSlow 32s ease-in-out infinite;
+}
+
+.animate-cloud-fast {
+  animation: cloudDriftFast 22s ease-in-out infinite;
+}

@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "MorningSync - 朝の逆算お出かけ＆睡眠マネージャー",
+  "short_name": "MorningSync",
+  "description": "予定と睡眠から逆算して最適な起床時間と乗り換えパターンを提案する、不規則な日々のためのライフマネジメントアプリ",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#132135",
+  "background_color": "#132135",
+  "categories": ["lifestyle", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

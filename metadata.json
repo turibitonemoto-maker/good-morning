@@ -1,0 +1,6 @@
+{
+  "name": "MorningSync - 朝の逆算お出かけ＆睡眠マネージャー",
+  "description": "予定と睡眠から逆算して最適な起床時間と乗り換えパターンを提案する、不規則な日々のためのライフマネジメントアプリ",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
